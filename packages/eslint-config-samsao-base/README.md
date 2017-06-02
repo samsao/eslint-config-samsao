@@ -1,6 +1,6 @@
 # eslint-config-samsao-base
 
-[![npm version](https://badge.fury.io/js/eslint-config-samsao-base.svg)](http://badge.fury.io/js/eslint-config-samsao-base)
+[![npm version](https://badge.fury.io/js/eslint-config-samsao-base.svg)](https://badge.fury.io/js/eslint-config-samsao-base)
 
 This package provides Samsao's base JS .eslintrc as an extensible shared config.
 
