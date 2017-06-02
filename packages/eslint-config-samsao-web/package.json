@@ -2,7 +2,7 @@
   "name": "eslint-config-samsao-web",
   "version": "1.0.0",
   "description": "Samsao's ESLint config, for the web",
-  "main": "web.js",
+  "main": "index.js",
   "scripts": {
     "prelint": "editorconfig-tools check * rules/*",
     "lint": "eslint .",
