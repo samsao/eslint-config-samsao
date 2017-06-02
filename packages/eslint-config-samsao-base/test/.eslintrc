@@ -1,0 +1,7 @@
+{
+  'rules': {
+    // disabled because it's tedious to write tests while following this rule
+    'no-shadow': 0,
+    'import/no-nodejs-modules': 'off',
+  },
+}
