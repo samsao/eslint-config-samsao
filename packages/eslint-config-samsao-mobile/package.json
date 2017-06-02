@@ -1,0 +1,68 @@
+{
+  "name": "eslint-config-samsao-mobile",
+  "version": "1.0.1",
+  "description": "Samsao's ESLint config, for the mobile",
+  "main": "index.js",
+  "scripts": {
+    "prelint": "editorconfig-tools check * rules/*",
+    "lint": "eslint .",
+    "tests-only": "babel-tape-runner ./test/test-*.js",
+    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent tests-only",
+    "travis": "cd ../eslint-config-samsao-base && npm install && npm link && cd - && npm link eslint-config-samsao-base && npm run --silent test ; npm unlink eslint-config-samsao-base >/dev/null &"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samsao/javascript"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "samsao",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Samsao Development Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samsao/javascript/issues"
+  },
+  "homepage": "https://github.com/samsao/javascript",
+  "peerDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.0",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-config-samsao-base": "^1.0.0",
+    "eslint-config-samsao-web": "^1.0.0",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-react-native": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.2.3",
+    "babel-tape-runner": "^2.0.1",
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.0",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-config-samsao-base": "^1.0.0",
+    "eslint-config-samsao-web": "^1.0.0",
+    "eslint-find-rules": "^1.14.3",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-react-native": "^2.3.1",
+    "in-publish": "^2.0.0",
+    "react": ">= 0.13.0",
+    "safe-publish-latest": "^1.1.1",
+    "tape": "^4.6.3"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}
