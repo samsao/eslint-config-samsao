@@ -9,6 +9,7 @@ module.exports = {
   rules: {
     'import/named': 'error',
     'import/no-amd': 'error',
+    'import/no-anonymous-default-export': 'off',
     'import/no-commonjs': 'error',
     'import/no-nodejs-modules': 'error',
     'import/no-named-as-default': 'error',
