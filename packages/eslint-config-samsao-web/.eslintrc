@@ -1,5 +1,5 @@
 {
-  'extends': './web.js',
+  'extends': './index.js',
 
   'rules': {
     'import/no-commonjs': 'off',
