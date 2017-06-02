@@ -1,0 +1,7 @@
+{
+  'extends': './web.js',
+
+  'rules': {
+    'import/no-commonjs': 'off',
+  },
+}
