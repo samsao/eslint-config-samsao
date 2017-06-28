@@ -6,10 +6,9 @@
   "scripts": {
     "prelint": "editorconfig-tools check * rules/*",
     "lint": "eslint .",
-    "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || yarn test) && safe-publish-latest",
+    "prepublish": "(not-in-publish || yarn test) && safe-publish-latest",
     "pretest": "yarn run --silent lint",
-    "test": "yarn run --silent tests-only",
+    "test": "eslint-find-rules --unused && babel-tape-runner ./test/test-*.js",
     "travis": "scripts/travis.sh"
   },
   "repository": {

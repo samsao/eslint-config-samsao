@@ -4,6 +4,7 @@ node_js:
 env:
   - 'TEST_DIR=packages/eslint-config-samsao-base'
   - 'TEST_DIR=packages/eslint-config-samsao-mobile'
+  - 'TEST_DIR=packages/eslint-config-samsao-node'
   - 'TEST_DIR=packages/eslint-config-samsao-web'
 before_install:
   - 'cd $TEST_DIR'
