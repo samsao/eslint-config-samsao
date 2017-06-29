@@ -21,17 +21,15 @@ The default export contains all of our ESLint rules, including ECMAScript 6+ and
 
 1. Install the correct versions of each package, which are listed by the command:
 
-  ```sh
-  npm info 'eslint-config-samsao-mobile@latest' peerDependencies
-  ```
+   ```sh
+   yarn info 'eslint-config-samsao-mobile' peerDependencies
+   ```
 
-  Linux/OSX users can run
+   Linux/OSX users can run
 
-  ```sh
-  (
-    export PKG=eslint-config-samsao-mobile;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-  )
-  ```
+   ```sh
+   export PKG=eslint-config-samsao-mobile; \
+   npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev "$PKG"
+   ```
 
-1. Add `'extends': 'samsao-mobile'` to your ``.eslintrc` file.
+2. Add `'extends': 'samsao-mobile'` to your `.eslintrc` file.
