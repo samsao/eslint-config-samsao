@@ -1,7 +1,7 @@
 {
-  'extends': './index.js',
+  "extends": "./index.js",
 
-  'rules': {
-    'import/no-commonjs': 'off',
-  },
+  "rules": {
+    "import/no-commonjs": "off"
+  }
 }
