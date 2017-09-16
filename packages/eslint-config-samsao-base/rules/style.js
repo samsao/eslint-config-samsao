@@ -9,7 +9,7 @@ module.exports = {
       SwitchCase: 1,
       VariableDeclarator: { var: 2, let: 2, const: 3 },
     }],
-    'max-len': ['error', 120],
+    'max-len': ['error', 100],
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 3 }],
   },
 };

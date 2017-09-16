@@ -11,5 +11,11 @@ module.exports = {
     'react/no-redundant-should-component-update': 'error',
     'react/prefer-stateless-function': ['error', { ignorePureComponents: true }],
     'react/sort-comp': 'off',
+    'react/no-unused-state': 'off',
+    'react/boolean-prop-naming': ['off', {
+      propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'],
+      rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
+    }],
+    'react/no-typos': 'off',
   },
 };
