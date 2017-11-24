@@ -14,6 +14,7 @@ module.exports = {
     'import/no-nodejs-modules': 'error',
     'import/no-named-as-default': 'error',
     'import/prefer-default-export': 'off',
+    'import/exports-last': 'off',
     'import/order': ['error', { groups: ['builtin', 'external', 'internal'] }],
 
     // Disabled due to https://github.com/tleunen/eslint-import-resolver-babel-module/issues/46
