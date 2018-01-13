@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config-samsao-base",
+  "version": "2.0.1",
+  "description": "Samsao's base JS ESLint config",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "(not-in-publish || yarn lint) && safe-publish-latest",
+    "lint": "yarn -s lint:no-unused-rules",
+    "lint:no-unused-rules": "../../bin/no_unused_rules base"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samsao/eslint-config-samsao"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "samsao",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Samsao Development Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samsao/eslint-config-samsao/issues"
+  },
+  "homepage": "https://github.com/samsao/eslint-config-samsao",
+  "peerDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "devDependencies": {
+    "in-publish": "^2.0.0",
+    "safe-publish-latest": "^1.1.1"
+  }
+}
