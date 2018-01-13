@@ -1,3 +1,13 @@
-node_modules
+## Jest
+coverage
 
+## NPM
+node_modules
+package-lock.json
+
+## System
+.DS_Store
+
+## Yarn
 yarn.lock
+yarn-error.log

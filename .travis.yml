@@ -1,17 +1,12 @@
 language: node_js
 node_js:
   - '7'
-env:
-  - 'TEST_DIR=packages/eslint-config-samsao-base'
-  - 'TEST_DIR=packages/eslint-config-samsao-mobile'
-  - 'TEST_DIR=packages/eslint-config-samsao-node'
-  - 'TEST_DIR=packages/eslint-config-samsao-web'
 before_install:
-  - 'cd $TEST_DIR'
   - 'npm install -g yarn'
 script:
-  - 'yarn install'
-  - 'yarn run travis'
+  - 'bin/prepare'
+  - 'bin/lint'
+  - 'bin/test'
 sudo: false
 matrix:
   fast_finish: true
