@@ -1,0 +1,49 @@
+{
+  "name": "eslint-config-samsao-mobile",
+  "version": "2.0.1",
+  "description": "Samsao's ESLint config, for the mobile",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "(not-in-publish || yarn lint) && safe-publish-latest",
+    "lint": "yarn -s lint:no-unused-rules",
+    "lint:no-unused-rules": "../../bin/no_unused_rules mobile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samsao/eslint-config-samsao"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "samsao",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Samsao Development Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samsao/eslint-config-samsao/issues"
+  },
+  "homepage": "https://github.com/samsao/eslint-config-samsao",
+  "engines": {
+    "node": ">= 4"
+  },
+  "peerDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-samsao-base": "^2.0.0",
+    "eslint-config-samsao-web": "^2.0.0",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-react-native": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "in-publish": "^2.0.0",
+    "safe-publish-latest": "^1.1.1"
+  }
+}

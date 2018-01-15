@@ -1,6 +1,0 @@
-{
-  'rules': {
-    // disabled because it's tedious to write tests while following this rule
-    'no-shadow': 0,
-  },
-}
