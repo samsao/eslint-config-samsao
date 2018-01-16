@@ -2,6 +2,8 @@
 
 #### Breaking Changes
 
+ * Switched to normal dependencies instead of peer ones.
+
  * Updated to `ESLint 4.x` release line.
 
 #### Features

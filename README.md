@@ -23,6 +23,19 @@ The ESLint rules that applies to React Native project. Applies `base` ones plus 
 
 The ESLint rules that applies to web based project. Applies `base` ones plus specific rules for React.
 
+## Dependencies
+
+Contrary to the original Airbnb's ESLint modules, we do not use peer dependencies
+but we instead use normal dependencies.
+
+Indeed, in our specific case, having normal dependencies reduce the maintenance burden
+of specifying all the needed peer dependencies when adding a specific ESLint configuration.
+
+That's means that we simply need to depend on the right config project (mobile, node or
+web) to run ESLint.
+
+Of course, it could causes problem eventually, but we are ready to live with it.
+
 ## Contributing
 
 First, install dependencies using `bin/prepare` script that uses Yarn 
