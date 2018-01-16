@@ -2,7 +2,7 @@
 
 We follow [Airbnb's Styleguide](https://github.com/airbnb/javascript) with some minors tweaks and modifications.
 
-The purpose of this repository is to mainly store Samsao's eslint config for its different projects.
+The purpose of this repository is to mainly store Samsao's ESLint config for its different projects.
 
 ### Base
 
