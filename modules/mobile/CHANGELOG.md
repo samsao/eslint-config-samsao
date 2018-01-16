@@ -1,4 +1,4 @@
-## In progress
+## 2.0.1 (January 16, 2018)
 
 #### Breaking Changes
 
