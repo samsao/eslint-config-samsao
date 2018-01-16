@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-samsao-node",
-  "version": "2.0.1",
+  "version": "2.0.2-rc.1",
   "description": "Samsao's ESLint config, for Node.js",
   "main": "index.js",
   "scripts": {

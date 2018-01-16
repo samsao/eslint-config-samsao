@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-samsao-base",
-  "version": "2.0.1",
+  "version": "2.0.2-rc.1",
   "description": "Samsao's base JS ESLint config",
   "main": "index.js",
   "scripts": {
